@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			background: #000;
+		}
+		.main{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.btn{
+			width: 150px;
+			border-radius: 50px;
+			height: 50px;
+			position: relative;
+			border: none;
+			color: #fff;
+			background: rgba(0, 0, 0, 0.5);
+			font-size: 1.7rem;
+			display: block;
+			cursor: pointer;
+		}
+		.btn::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(90deg, #cdb4db 0%, #e63946 33%, #ffbe0b 70%, #023e8a 100%);
+			width: 160px;
+			background-size: 1500% 1500%;
+			height: 60px;
+			transform: translate(-5px, -5px);
+			border-radius: 50px;
+			z-index: -1;
+			animation: anim 2s ease-in-out infinite;
+		}
+		@keyframes anim{
+			0%{
+				background-position: 0% 50%;
+			}
+			5%{
+				background-position: 100% 50%;
+			}
+			100%{
+				background-position: 0% 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<button class="btn">Click me</button>
+</div>
+</body>
+</html>

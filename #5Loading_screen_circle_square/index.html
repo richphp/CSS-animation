@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			background: #000;
+		}
+		.loader{
+			width: 100px;
+			height: 100px;
+			transform: translate(-50px -50px);
+			position: absolute;
+			top: 42%;
+			left: 45%;
+		}
+		span{
+			display: block;
+			position: absolute;
+			width: 40%;
+			height: 40%;
+			border-radius: 50%;
+			animation: loader 2s infinite ease-in-out;
+		}
+		.one{
+			background: #ffe8d6;
+			animation-delay: 1.5s;
+		}
+		.two{
+			background: #f7a607;
+			animation-delay: 1s;
+		}
+		.three{
+			background: #a2d2ff;
+			animation-delay: 0.5s;
+		}
+		.four{
+			background: #52b788;
+		}
+		@keyframes loader{
+			0%{
+				transform: translate(0%);
+				border-radius: 50%;
+			}
+			25%{
+				transform: translate(150%) scale(0.5);
+				border-radius: 0%;
+			}
+			50%{
+				transform: translate(150%, 150%);
+				border-radius: 50%;
+			}
+			75%{
+				transform: translate(0, 150%) scale(0.5);
+				border-radius: 0%;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="loader">
+	<span class="one"></span>
+	<span class="two"></span>
+	<span class="three"></span>
+	<span class="four"></span>
+</div>
+</body>
+</html>

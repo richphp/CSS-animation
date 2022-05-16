@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			background: #fff;
+		}
+		.main{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.loader{
+			margin: auto;
+			width: 80px;
+			height: 80px;
+			position: relative;
+		}
+		.loader::before,
+		.loader::after{
+			content: "";
+			position: absolute;
+			width: inherit;
+			height: inherit;
+			border-radius: 50%;
+			mix-blend-mode: multiply;
+			animation: rotate 1s infinite;
+		}
+		.loader::before{
+			background: #023047;
+		}
+		.loader::after{
+			background: #ffb703;
+			animation-delay: .5s;
+		}
+		@keyframes rotate{
+			0%, 100%{
+				left: 95px;
+			}
+			25%{
+				transform: scale(.3);
+			}
+			50%{
+				left: 0;
+			}
+			75%{
+				transform: scale(1);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="loader">
+		</div>		
+	</div>
+
+</body>
+</html>

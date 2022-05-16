@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			background: #000;
+		}
+		.main{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		h1{
+			-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+			-webkit-mask-size: 200%;
+			animation: shine 2s linear infinite;
+		}
+		@keyframes shine{
+			from{
+				-webkit-mask-position: 150%;
+			}
+			to{
+				-webkit-mask-position: -50%;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<h1>&#128526;</h1>
+	<h1>&#128578;</h1>
+	<h1>&#128525;</h1>
+	<h1>&#129324;</h1>
+	<h1>&#128514;</h1>
+	<h1>&#128520;</h1>
+	<h1>&#129313;</h1>
+	<h1>&#128564;</h1>
+	<h1>&#129297;</h1>
+</div>
+</body>
+</html>
