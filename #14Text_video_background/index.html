@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		* {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		}
+
+		.video {
+		  position: relative;
+		}
+
+		video {
+		  position: absolute;
+		  left: 0px;
+		  top: 0px;
+		  width: 100vw;
+		  height: 100vh;
+		  object-fit: cover;
+		  overflow: hidden;
+		}
+
+		.text {
+		  position: absolute;
+		  top: 0;
+		  width: 100vw;
+		  height: 100vh;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction: column;
+		  border: 2vw solid white;
+		  color: #fff;
+		  overflow: hidden;
+		  background: #000;
+		  mix-blend-mode: multiply;
+		}
+
+		.text p {
+		  font-size: 12vw;
+		  line-height: 1;
+		  font-weight: 900;
+		  font-family: helvetica;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<section class="video">
+	  <video autoplay loop muted playsinline preload="auto" width="100%">
+	    <source src="videos/animation.mp4" type="video/mp4">
+	  </video>
+	  <div class="text">
+	    <p>RICH</p>
+	    <p>PHP</p>
+	  </div>
+	</section>
+</div>
+</body>
+</html>
