@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			background: #000;
+		}
+		.main{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.main{
+			line-height: 40px;
+			color: #fff;
+			font-size: 30px;
+		}
+		.title{
+			display: block;
+			opacity: 0;
+			animation: reveal 1s forwards ease-in-out;
+		}
+		.second{
+			animation-delay: 1s;
+		}
+		.third{
+			animation-delay: 2s;
+		}
+		.fourth{
+			animation-delay: 3s;
+		}
+
+		@keyframes reveal{
+			from{
+				transform: translateY(20px);
+			}
+			to{
+				opacity: 1;
+				transform: none;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div class="main">
+	
+	<span class="title">Rich PHP</span>
+	<span class="title second">Like</span>
+	<span class="title third">Comment</span>
+	<span class="title fourth">Share</span>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			background: #000;
+		}
+		.icon-wrapper{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.icon{
+			display: inline-block;
+			font-size: 40px;
+			animation: float 5s infinite ease-in-out;
+		}
+		.first{
+			animation-delay: 1s;
+		}
+		.second{
+			animation-delay: 2s;
+		}
+
+		@keyframes float{
+			0%{
+				transform: translateY(0) scale(1.0);
+			}
+			50%{
+				transform: translateY(-15px) scale(1.2);
+			}
+			100%{
+				transform: translateY(0) scale(1.0);
+			}
+		}
+
+	</style>
+</head>
+<body>
+<div class="icon-wrapper">
+	
+	<i class="icon">&#128526;</i>
+	<i class="first icon">&#128520;</i>
+	<i class="second icon">&#128564;</i>
+	
+</div>
+</body>
+</html>
