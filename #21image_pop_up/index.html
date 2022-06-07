@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+body {
+  display: flex;
+  height: 100vh;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  place-items: center;
+  background: #000;
+}
+
+div {
+  background: #ff7a18;
+  height: 250px;
+  width: 250px;
+}
+
+.animate.pop {
+  animation-name: pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.5s;
+}
+
+.delay-1 {
+  animation-delay: 0.6s;
+}
+.delay-2 {
+  animation-delay: 0.7s;
+}
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+@keyframes pop{
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+	</style>
+</head>
+<body>
+<div class="animate pop delay-1"></div>
+<div class="animate pop delay-2"></div>
+<div class="animate pop delay-3"></div>
+</body>
+</html>
